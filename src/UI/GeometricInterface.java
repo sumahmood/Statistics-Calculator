@@ -11,6 +11,10 @@ import java.awt.event.ActionListener;
 
 public class GeometricInterface extends DistributionSetUp {
 
+    // Creates a pane for the Geometric distribution.
+    // EFFECTS: Creates a tabbed pane for the Geometric distribution based on the fields relevant
+    //          to that distribution. Also, ensures that the calculations made for the distribution
+    //          are accurate and deal with cases where the user inputs invalid values.
     public GeometricInterface(JPanel panel) {
         super();
         panel.setLayout(new GridLayout(7, 2));

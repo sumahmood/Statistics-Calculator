@@ -12,6 +12,10 @@ import java.awt.event.ActionListener;
 
 public class BinomialInterface extends DistributionSetUp {
 
+    // Creates a pane for the Binomial distribution.
+    // EFFECTS: Creates a tabbed pane for the Binomial distribution based on the fields relevant
+    //          to that distribution. Also, ensures that the calculations made for the distribution
+    //          are accurate and deal with cases where the user inputs invalid values.
     public BinomialInterface(JPanel panel) {
         super();
         JButton n = new JButton("Number of Trials");

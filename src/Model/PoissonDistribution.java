@@ -9,6 +9,10 @@ public class PoissonDistribution extends CombinationDistributions implements Dis
     float lambda;
     float interval;
 
+    // Models a Poisson distribution with the given parameter 'lambda' (rate of occurrence of event) and 'interval' (length of time being considered).
+    // EFFECTS: Creates a Poisson distribution with the given 'lambda' and 'interval' parameters.
+    //          Throws IllegalProbabilityException if lambda is less than or equal to 0.
+    //          Throws TrialsValueException if the length of the interval being considered is less than or equal to 0.
     public PoissonDistribution(float lambda, float interval) throws IllegalProbabilityException, TrialsValueException {
 
         if (lambda <= 0) {

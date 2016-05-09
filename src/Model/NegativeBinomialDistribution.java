@@ -9,6 +9,10 @@ public class NegativeBinomialDistribution extends CombinationDistributions imple
     int r;
     float p;
 
+    // Models a Negative Binomial distribution with the given parameter 'r' (number of successes needed) and 'p' (probability of success).
+    // EFFECTS: Creates a Negative Binomial distribution with the given 'r' and 'p' parameters.
+    //          Throws IllegalProbabilityException if the probability is a value outside the interval (0,1).
+    //          Throws TrialsValueException if the number of successes needed is less than 1.
     public NegativeBinomialDistribution(int r, float p) throws IllegalProbabilityException, TrialsValueException {
 
         if (p < 0 || p > 1) {

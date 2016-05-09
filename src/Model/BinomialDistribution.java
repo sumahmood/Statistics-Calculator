@@ -9,6 +9,10 @@ public class BinomialDistribution extends CombinationDistributions implements Di
     private int n;
     private float p;
 
+    // Models a Binomial distribution with the given parameter 'n' (number of trials) and 'p' (probability of success).
+    // EFFECTS: Creates a Binomial distribution with the given 'n' and 'p' parameters.
+    //          Throws IllegalProbabilityException if the probability is a value outside the interval (0,1).
+    //          Throws TrialsValueException if the number of trials is less than 1.
     public BinomialDistribution(int n, float p) throws IllegalProbabilityException, TrialsValueException {
 
         if (p < 0 || p > 1) {

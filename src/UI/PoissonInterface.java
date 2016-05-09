@@ -13,6 +13,10 @@ import java.awt.event.ActionListener;
 
 public class PoissonInterface extends DistributionSetUp{
 
+    // Creates a pane for the Poisson distribution.
+    // EFFECTS: Creates a tabbed pane for the Poisson distribution based on the fields relevant
+    //          to that distribution. Also, ensures that the calculations made for the distribution
+    //          are accurate and deal with cases where the user inputs invalid values.
     public PoissonInterface(JPanel panel) {
         super();
         JButton lambda = new JButton("Rate of Poisson Process");

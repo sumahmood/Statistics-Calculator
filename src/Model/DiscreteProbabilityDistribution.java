@@ -4,7 +4,7 @@ import Exceptions.IllegalValueException;
 
 public interface DiscreteProbabilityDistribution {
 
-    // Calculates the expected value of the probability distribution
+    // Calculates the expected value of the probability distribution.
     // EFFECTS: Returns the expected value of the probability distribution.
     public float ExpectedValue();
 

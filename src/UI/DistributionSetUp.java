@@ -19,6 +19,10 @@ public class DistributionSetUp extends JFrame {
     protected final JTextField pmfVal;
     protected final JTextField cdfVal;
 
+    // Sets up all fields and tabbed pane details that are common amongst distributions.
+    // EFFECTS: Creates details of fields that are common across all distributions, and
+    //          is used by distributions to display fields that are relevant to each given
+    //          distribution.
     public DistributionSetUp() {
 
         setSize(800, 600);

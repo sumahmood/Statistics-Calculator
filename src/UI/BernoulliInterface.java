@@ -11,6 +11,10 @@ import java.awt.event.ActionListener;
 
 public class BernoulliInterface extends DistributionSetUp {
 
+    // Creates a pane for the Bernoulli distribution.
+    // EFFECTS: Creates a tabbed pane for the Bernoulli distribution based on the fields relevant
+    //          to that distribution. Also, ensures that the calculations made for the distribution
+    //          are accurate and deal with cases where the user inputs invalid values.
     public BernoulliInterface(JPanel panel){
 
         super();

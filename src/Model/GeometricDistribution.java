@@ -7,6 +7,10 @@ public class GeometricDistribution implements DiscreteProbabilityDistribution {
 
     private float p;
 
+    // Models a Geometric distribution with the given parameter (probability of success).
+    // EFFECTS: Creates a Geometric distribution with the given 'p' parameter.
+    //          Throws IllegalProbabilityException if the probability is a value outside the interval (0,1).
+
     public GeometricDistribution(float p) throws IllegalProbabilityException {
         if (p < 0 || p > 1) {
             throw new IllegalProbabilityException();
